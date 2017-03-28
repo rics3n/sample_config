@@ -1,0 +1,5 @@
+{
+  "api" : {
+    "allowed_origins" : "test.test.de"
+  }
+}
