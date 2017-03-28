@@ -1,8 +1,58 @@
 {
-  "api" : {
-    "base": "base"
+  "api": {
+    "allowed_origins": "test.test.com"
+  },
+  "db": {
+    "master": "192.168.0.1"
+  },
+  "redis": {
+    "db": 0
   },
   "storage": {
-      "account": "test"
+    "account": "test",
+    "container": "testdata",
+    "secure_container": "testdatasecure",
+    "static_account": "test",
+    "static_container": "teststaticdata"
+  },
+  "public": {
+    "config": {
+      "api_host": "https://test.test.com/saas/api/v1",
+      "tenant": "rwe",
+      "app_name": "test",
+      "storage_server": "https://test.de/testdata",
+      "static_files_version": "asdasdasdfwqq23123123",
+      "static_storage_server": "https://test.de/teststaticdata",
+      "url": "https://test.test.com",
+      "support_email": "test@test.com",
+      "avatar_count": "31",
+      "modules": {
+        "age_range": "true",
+        "powered_by": "tploy_customer",
+        "create_account_warning": "true",
+        "logo_with_slogan": "false"
+      },
+      "profile_types": "JOBSHARING PROJECT JOBROTATION FLEXIBLE",
+      "job_types": "JOBSHARING JOBROTATION PROJECT",
+      "job_application": {
+        "contact": "true",
+        "contact_name": "tester",
+        "contact_email": "tester@test.com"
+      },
+      "email_validation_regex": "([a-z0-9][-a-z0-9_\\+\\.]*[a-z0-9])@(test.de)",
+      "email_rules": "*@test.de",
+      "password_rules": "PASSWORD_MINLENGTH PASSWORD_TWO_LETTERS",
+      "theme_primary": {
+        "100": "#CCCCCC",
+        "500": "#005f69"
+      },
+      "theme_accent": {
+        "500": "#005f69"
+      },
+      "theme_warn": {
+        "500": "#e94c0a",
+        "contrast_default_color": "light"
+      }
+    }
   }
 }
