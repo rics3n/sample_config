@@ -1,5 +1,8 @@
 {
   "api" : {
-    "allowed_origins" : "test.test.de"
+    "base": "base"
+  },
+  "storage": {
+      "account": "test"
   }
 }
